@@ -2,7 +2,7 @@ import sys
 
 
 def shrink(string: str) -> None:
-    """print the fist 8 letters from the string"""
+    """print the first 8 letters from the string"""
     print(string[:8])
 
 
@@ -13,7 +13,7 @@ def enlarge(string: str) -> None:
 
 if __name__ == "__main__":
     if len(sys.argv) == 1:
-        print("None")
+        print(None)
     else:
         for arg in sys.argv[1:]:
             if len(arg) > 8:
