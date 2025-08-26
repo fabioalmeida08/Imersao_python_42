@@ -12,10 +12,13 @@ def enlarge(string: str) -> None:
 
 
 if __name__ == "__main__":
-    for i in range(1, len(sys.argv)):
-        if len(sys.argv[i]) > 8:
-            shrink(sys.argv[i])
-        elif len(sys.argv[i]) == 8:
-            print(sys.argv[i])
-        else:
-            enlarge(sys.argv[i])
+    if len(sys.argv) == 1:
+        print("None")
+    else:
+        for arg in sys.argv[1:]:
+            if len(arg) > 8:
+                shrink(arg)
+            elif len(arg) == 8:
+                print(arg)
+            else:
+                enlarge(arg)
