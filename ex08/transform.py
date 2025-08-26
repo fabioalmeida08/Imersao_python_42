@@ -8,6 +8,6 @@ def square_even_numbers(lst: list[int]) -> list[int]:
 
 if __name__ == "__main__":
     try:
-        print(square_even_numbers(list(map(int, sys.argv[1].split(" ")))))
+        print(f'Squared evens: {square_even_numbers(list(map(int, sys.argv[1].split(" "))))}')
     except IndexError:
         print("missing argument")
