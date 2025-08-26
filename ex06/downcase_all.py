@@ -8,7 +8,7 @@ def downcase_it(string: str) -> str:
 
 if __name__ == "__main__":
     if len(sys.argv) == 1:
-        print("None")
+        print(None)
     else:
         for arg in sys.argv[1:]:
-            downcase_it(arg)
+            print(downcase_it(arg))
